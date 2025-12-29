@@ -23,7 +23,7 @@ class AppFooter extends HTMLElement {
         </div>
         <div class="rodape__sub">
             <p class="rodape__c">
-                <span>&copy; 2024 Christian Rui</span>
+                <span>&copy; 2024 christianwl</span>
                 <br>
                 Projeto para fins educacionais. Todas as marcas, logotipos e imagens são de propriedade de seus respectivos donos.
             </p>
