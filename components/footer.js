@@ -1,21 +1,24 @@
 class AppFooter extends HTMLElement {
   connectedCallback() {
+    const isSubfolder = window.location.pathname.includes('/pages/');
+    const root = isSubfolder ? '../../' : './';
+
     this.innerHTML = `
     <footer>
         <div>
-            <a href="/index.html">
-                <img class="rodape__logo" src="/img/logo/logo2.png" alt="Logo do Site">
+            <a href="${root}index.html">
+                <img class="rodape__logo" src="${root}img/logo/logo2.png" alt="Logo do Site">
             </a>
         </div>
         <div class="rodape__contato">
             <a href="https://www.instagram.com/bearly_rui/">
-                <img src="/img/icones/instagramR.png" alt="Icone do Instagram">
+                <img src="${root}img/icones/instagramR.png" alt="Icone do Instagram">
             </a>
             <a href="https://www.linkedin.com/in/christianwilliam-dev/">
-                <img src="/img/icones/linkedinR.png" alt="Icone do LinkedIn">
+                <img src="${root}img/icones/linkedinR.png" alt="Icone do LinkedIn">
             </a>
             <a href="https://github.com/christianwl">
-                <img src="/img/icones/githubR.png" alt="Icone do GitHub">
+                <img src="${root}img/icones/githubR.png" alt="Icone do GitHub">
             </a>
         </div>
         <div class="rodape__sub">
@@ -29,5 +32,4 @@ class AppFooter extends HTMLElement {
     `;
   }
 }
-
 customElements.define('app-footer', AppFooter);
