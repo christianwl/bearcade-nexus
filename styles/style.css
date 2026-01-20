@@ -3,12 +3,6 @@
 /* :root {
     --bg-color: #292929;
 } */
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
 a {
     text-decoration: none;
     color: #f4f4f4;
