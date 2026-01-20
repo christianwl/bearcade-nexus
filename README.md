@@ -17,6 +17,13 @@ Iniciei um processo de atualização técnica para tornar o código mais profiss
 * **Componentização com Web Components:** Criação de componentes reutilizáveis (`app-header` e `app-footer`) usando JavaScript puro (Vanilla JS). Isso eliminou a necessidade de repetir o mesmo código HTML em várias páginas.
 * **Lógica de Caminhos Dinâmicos:** Implementação de lógica via JS para garantir que os links e imagens funcionem perfeitamente, independentemente de a página estar na raiz ou em subdiretórios.
 
+### 🚀 Futuras adições
+
+* **Modularização de Conteúdo:** Componentização das seções principais das páginas.
+* **Dinamização de Dados:** Migração de conteúdos textuais para arquivos JSON, permitindo o consumo de forma dinâmica via JavaScript.
+* **Refinamento de UI/UX:** Atualizações na folha de estilo (CSS) com foco em novos ícones, micro-interações e feedback visual para o usuário.
+* **Refatoração e Arquitetura:** Otimização do código-fonte e reestruturação dos diretórios do projeto.
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
