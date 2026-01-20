@@ -24,3 +24,11 @@ Iniciei um processo de atualização técnica para tornar o código mais profiss
 * **HTML5:** Estrutura semântica.
 * **CSS3:** Estilização e layout responsivo.
 * **JavaScript (ES6+):** Criação de `Custom Elements` para os componentes e lógica de navegação.
+
+## Autor
+
+<div>
+  <a href="https://github.com/christianwl">
+    <img src="https://contrib.rocks/image?repo=christianwl/bearcade-nexus" alt="foto do(s) autor(es)"/>
+  </a>
+</div>
