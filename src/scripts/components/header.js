@@ -1,3 +1,5 @@
+import { mudaTema } from "../utils/dark-mode.js";
+
 class AppHeader extends HTMLElement {
   connectedCallback() {
     const isSubfolder = window.location.pathname.includes('/pages/');
@@ -7,15 +9,15 @@ class AppHeader extends HTMLElement {
     <header class="cabecalho">
         <div class="cabecalho__menu">
             <div class="cabecalho__menu__botao">
-                <img class="cabecalho__menu__botao__img" src="${root}img/nav/Menu.png" alt="">
+                <img class="cabecalho__menu__botao__img" src="${root}src/assets/img/nav/menu.png" alt="">
                 <p>Menu</p>
             </div>
 
             <a href="${root}index.html">
-                <img class="cabecalho__menu__img" src="${root}img/logo/logo2.png" alt="Logo do Site">
+                <img class="cabecalho__menu__img" src="${root}src/assets/img/logo/logo.png" alt="Logo do Site">
             </a>
-            <button class="buttomTema" onclick="mudaTema()">
-                <img src="${root}img/nav/Dark Mode.png" alt="">
+            <button class="buttomTema" >
+                <img src="${root}src/assets/img/nav/dark-mode.png" alt="">
             </button>
         </div>
         <nav class="cabecalho__navegacao">
@@ -31,6 +33,11 @@ class AppHeader extends HTMLElement {
         </nav>
     </header>
     `;
+
+    // Seleciona o botão e adiciona o evento
+    this.querySelector('.buttomTema').addEventListener('click', () => {
+        mudaTema(); // Agora ele consegue chamar a função importada
+    });
   }
 }
 customElements.define('app-header', AppHeader);
